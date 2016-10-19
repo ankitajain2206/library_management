@@ -1,0 +1,26 @@
+{
+  "name": "library_management",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "amqp": "^0.2.6",
+    "amqp-delay.node": "^0.2.0",
+    "amqp-retry.node": "^0.3.0",
+    "amqplib": "^0.4.2",
+    "body-parser": "1.15.2",
+    "bootstrap": "^3.3.7",
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "express": "^3.4.8",
+    "jquery": "^3.1.1",
+    "promise": "^7.1.1",
+    "redis": "^2.6.2",
+    "winston": "^2.2.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

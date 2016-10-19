@@ -1,0 +1,29 @@
+<html>
+
+
+<body>
+<input type="button" id="addBook" value="ADD BOOK"/>
+<input type="button" id="delBook" value="DELETE BOOK"/>
+<input type="button" id="listBook" value="BOOK DETAILS"/>
+<input type="button" id="getAllDetails" value="LIST ALL BOOKS"/>
+
+<form method="POST" id="bForm">
+<br/>
+<div id="fName">Book Name:</div><input type="text" name="bName" id="bName"><br><br/>
+<div id="fAuthor">Book Author:</div><input type="text" name="author" id="author"><br><br/>
+<div id="fType">Book Type:</div><input type="text" name="type" id="type"><br><br/>
+<input type="button" name="submit" id="submit" value="SUBMIT">
+<!-- <input type="button" name="delete" id="delete" value="DELETE">
+<input type="button" name="getDetails" id="getDetails" value="LIST"><br> -->
+</form>
+
+
+<input type="hidden" id="temp" name="temp">
+
+<table id='bookList' border="2"></table>
+
+<script src="javascripts/jquery-3.1.1.js"></script> 
+<script src="javascripts/client.js"></script>
+</body>
+
+</html>
