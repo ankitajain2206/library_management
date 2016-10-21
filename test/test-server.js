@@ -18,8 +18,7 @@ describe('books', function() {
   			.post('/getAllDetails')
   			.send({'bName':'', 'author':'', 'type':''})
   			.end(function(err, res){
-  				//res.should.be.json;
-      			//res.body.should.be.a('array');
+  
   				res.should.have.status(200);
   				done();
   			});
@@ -31,8 +30,7 @@ describe('books', function() {
   			.post('/getDetails')
   			.send({'bName':'bb1', 'author':'', 'type':''})
   			.end(function(err, res){
-  				//res.should.be.json;
-      			//res.body.should.be.a('array');
+  				
   				res.should.have.status(200);
   				done();
   			});
@@ -53,8 +51,6 @@ describe('books', function() {
 			      res.body.SUCCESS.bName.should.equal('bb2');
 			      res.body.SUCCESS.author.should.equal('aa2');
 			      res.body.SUCCESS.type.should.equal('tt2');
-  				//res.should.be.json;
-      			//res.body.should.be.a('array');
   				res.should.have.status(200);
   				done();
   			});
