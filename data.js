@@ -1,11 +1,7 @@
-var redis = require("redis");
-var client = redis.createClient();
+var conn = require('./connection/redis_connection.js');
 
-//var exports = module.exports={}
-	
-client.on("error", function (err) {
-    console.log("Error " + err);
-});
+var client = conn.RedisConnection.getInstance();
+
 
 module.exports.addBook = function(bookObject, callBack){
 
